@@ -9,16 +9,16 @@ class Tflock < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kerraform/tflock/releases/tag/v0.0.1", :using => CurlDownloadStrategy
-      sha256 "f994849250613690d2ea40f1957ef695fb289342266412fdf5427fa1f57fc7f7"
+      url "https://github.com/kerraform/tflock/releases/download/v0.0.1/tflock_0.0.1_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "d7ee49a8753a6815bcff9c1b49d9c510e22aac866a3bb9fe9bf8771d4ee69ba8"
 
       def install
         bin.install "tflock"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kerraform/tflock/releases/tag/v0.0.1", :using => CurlDownloadStrategy
-      sha256 "e47f5f4448f0436415eec2acda6ff8e6d24af133cbb310d1dc15dc9343f6f097"
+      url "https://github.com/kerraform/tflock/releases/download/v0.0.1/tflock_0.0.1_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "7098b64c0029ebd159b75d9c46d63c5ba2dd75940c010a582229d92afc7e9937"
 
       def install
         bin.install "tflock"
@@ -28,16 +28,16 @@ class Tflock < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kerraform/tflock/releases/tag/v0.0.1", :using => CurlDownloadStrategy
-      sha256 "7e3c32b8a15f844b547baeef31185175c55df7be5cc251097f367300e76c6b7e"
+      url "https://github.com/kerraform/tflock/releases/download/v0.0.1/tflock_0.0.1_linux_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "3329163d6caa8fbaeef9bfbd0ba2ba06366d0697e6b95f69b79577e9d65e4356"
 
       def install
         bin.install "tflock"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kerraform/tflock/releases/tag/v0.0.1", :using => CurlDownloadStrategy
-      sha256 "9d95ba94a4193564d7f3203957e7e1359b4146a670603ce09467c4d6a2a84c69"
+      url "https://github.com/kerraform/tflock/releases/download/v0.0.1/tflock_0.0.1_linux_amd64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "1159a3725e29b747c614270d6db3d68328323943af771b2d7479ea36167da0ff"
 
       def install
         bin.install "tflock"
