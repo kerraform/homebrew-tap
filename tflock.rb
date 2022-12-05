@@ -5,20 +5,20 @@
 class Tflock < Formula
   desc "Lock Terraform state manually"
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "5cf7347e0e7014f39881ecf51db1f9f26447c5ad1134bc1a306e1e7a9d4b18f9"
+      url "https://github.com/kerraform/tflock/releases/download/v0.1.1/tflock_0.1.1_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "9af1b7e64743dd7d8935c3cf9a617d842c63f0d67877bfc8c35c4fb115d697be"
 
       def install
         bin.install "tflock"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "e15749e8a22d535a15877714a931bea6806d1e21f44588200e7e24ed137b8181"
+      url "https://github.com/kerraform/tflock/releases/download/v0.1.1/tflock_0.1.1_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "f5d08879321741dd2da841bfe5ff19991f695d6a350fe33d4477118565cee067"
 
       def install
         bin.install "tflock"
@@ -28,16 +28,16 @@ class Tflock < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "daa9997a3dd052c3eb566cf9d244dfe06f276c2a56f93d3da1be25da1f22e2af"
+      url "https://github.com/kerraform/tflock/releases/download/v0.1.1/tflock_0.1.1_linux_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "e07fba49ad2eb07f355aaf260647ddb7282b6ea22c9ec22a7c16bd4425604ac5"
 
       def install
         bin.install "tflock"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_linux_amd64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "5a2a0bcea75ee26ae763ff1e38db487eee6f80410434f059aeee09fd2e30fbe8"
+      url "https://github.com/kerraform/tflock/releases/download/v0.1.1/tflock_0.1.1_linux_amd64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "70ad83b37d7b2b937c2219dfd61c738f07b420cbc86392995caa92f7a982bd0f"
 
       def install
         bin.install "tflock"
