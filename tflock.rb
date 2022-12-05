@@ -10,7 +10,7 @@ class Tflock < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "7f48058c8cf3b1241ce4f8844c272195ab3b90b7f4686d7dd05189fa8680d4bd"
+      sha256 "beb41aeff882c09d1a45f3083c278b09c76b3924aab31b91fc49182923cb5451"
 
       def install
         bin.install "tflock"
@@ -18,7 +18,7 @@ class Tflock < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "1ae2150c4fdfbc4c406d5a79d53186fb6a041f1a76c5f55a03c55d7748f2f2ad"
+      sha256 "03646d45533f2559d6ff012a7e366b103cd6e2cdc8d0b075f902df9d91f70b87"
 
       def install
         bin.install "tflock"
@@ -29,7 +29,7 @@ class Tflock < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "e282efb354578ffeae962b3a1a6ca5bf174829cfbc86b3fefae00fad345b0785"
+      sha256 "28a05f0439d1a3ccea86601fbd177523d73ec094fa89a91a1f2000bfbaa5ec14"
 
       def install
         bin.install "tflock"
@@ -37,7 +37,7 @@ class Tflock < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kerraform/tflock/releases/download/v0.1.0/tflock_0.1.0_linux_amd64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "34ff8d99d5570cddc75faef7d1e541ef90fdaa863409f296cd536d9c219fdcbe"
+      sha256 "d802b430333b3779044452f0ab1248d9bffed8eb1eb0c4323e884a37550e7c20"
 
       def install
         bin.install "tflock"
